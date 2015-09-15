@@ -3,6 +3,7 @@ package com.cmcc.attendance.activity;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import android.app.Activity;
@@ -31,12 +32,12 @@ import com.lianlin.R;
 public class detailActivity extends Activity {
 	public static String id,toptitle;
 	TextView text_name,text_title;
-	String title;
+	String title,content,listenContent,a;
 	ImageView btn_return;
 //	static ImageView imgtop;
 	LinearLayout btn_jrgwc,btn_sc,btn_fx;
 	
-	private String url,contentUrl;
+	private String url,contentUrl,workType;
     private MediaPlayer mMediaPlayer;
     private int state = IDLE;
     private static final int PLAYING = 0;
@@ -60,7 +61,7 @@ public class detailActivity extends Activity {
         setContentView(R.layout.detail);
         seekbar = (SeekBar) findViewById(R.id.detail_seekbar1);  
         seekbar.setOnSeekBarChangeListener(new MySeekbar()); 
-        play();
+       
         btn_return=(ImageView)findViewById(R.id.detail_btn_return);
         btn_return.setOnClickListener(new OnClickListener(){
 
@@ -79,8 +80,73 @@ public class detailActivity extends Activity {
         
         Intent intent = getIntent();
         Bundle bd = intent.getBundleExtra("bd");// 根据bundle的key得到对应的对象
-        url=bd.getString("url");
-        contentUrl = bd.getString("contentUrl");
+        url=bd.getString("url");//
+        contentUrl = bd.getString("contentUrl");//内容页面
+        workType = bd.getString("workType");//作业类型
+        Thread t4 = new Thread() {
+	      	 @Override
+	      	public void run() {	
+	      		getContent();
+	      	 }
+        };
+        t4.start();
+        try{
+	        
+        	//JSONObject contentJson=null;
+        	//String a = Chuli.HttpGetData(Chuli.yuming + contentUrl, BaseActivity.now_userid);
+        	if(a!=""){
+	        	JSONObject contentJson=new JSONObject(a);        	
+	        	listenContent = contentJson.getString("audio_url");
+	        	if(workType=="test_paper"){
+	        		//content = contentJson.getString("content");
+	        	}else{
+	        		if(workType=="listen_text"){
+	        			content = contentJson.getString("content");
+	        		}else{
+	        			if(workType==""){
+	        				
+	        			}
+	        		}
+	        	}
+        	}else{
+        		seekbar.setVisibility(View.GONE );
+        	}
+        }catch(Exception ee){
+        	seekbar.setVisibility(View.GONE );
+        	Log.v("Detail Json Error", ee.toString());
+        }
+        //JSONObject p3=new JSONObject(a);
+        
+      //WebView
+        WebView browser=(WebView)findViewById(R.id.Toweb); 
+        try{
+	        browser.loadUrl(Chuli.yuming + url);
+	        //browser.loadUrl("http://www.baidu.com");  
+	          
+	        //设置可自由缩放网页  
+	        browser.getSettings().setSupportZoom(true);  
+	        browser.getSettings().setBuiltInZoomControls(true);  
+        
+          
+        // 如果页面中链接，如果希望点击链接继续在当前browser中响应，  
+        // 而不是新开Android的系统browser中响应该链接，必须覆盖webview的WebViewClient对象         
+        browser.setWebViewClient(new WebViewClient() {  
+            public boolean shouldOverrideUrlLoading(WebView view, String url)  
+            {   
+                //  重写此方法表明点击网页里面的链接还是在当前的webview里跳转，不跳到浏览器那边  
+                view.loadUrl(url);  
+                return true;  
+            }         
+             });
+        }catch(Exception ee){
+        	Log.v("载入homeworkpaper错误  ", ee.toString());
+        }
+        
+        if(listenContent!=""){
+        play();
+        }else{
+        	seekbar.setVisibility(View.GONE );
+        }
        
 /*        
         r_fx=(RelativeLayout)findViewById(R.id.detail_r_fx);
@@ -94,49 +160,44 @@ public class detailActivity extends Activity {
         	
         });*/
         
-      //WebView
-        WebView browser=(WebView)findViewById(R.id.Toweb); 
-        try
-        {
-        browser.loadUrl(Chuli.yuming + url);
-        //browser.loadUrl("http://www.baidu.com");  
-          
-        //设置可自由缩放网页  
-        browser.getSettings().setSupportZoom(true);  
-        browser.getSettings().setBuiltInZoomControls(true);  
-          
-        // 如果页面中链接，如果希望点击链接继续在当前browser中响应，  
-        // 而不是新开Android的系统browser中响应该链接，必须覆盖webview的WebViewClient对象         
-        browser.setWebViewClient(new WebViewClient() {  
-            public boolean shouldOverrideUrlLoading(WebView view, String url)  
-            {   
-                //  重写此方法表明点击网页里面的链接还是在当前的webview里跳转，不跳到浏览器那边  
-                view.loadUrl(url);  
-                        return true;  
-            }         
-             });
-        }catch(Exception ee){
-        	Log.v("载入homeworkpaper错误  ", ee.toString());
-        }
+      
         
 	 }
     
 
+	private void getContent(){
+		try{
+			a = Chuli.HttpGetData(Chuli.yuming + contentUrl, BaseActivity.now_userid);
+			
+		}catch (Exception ee){
+			Log.v("get content data error ", ee.toString());
+		}
+		
+	}
+	
     private void play() {
     	try {
     	if (mMediaPlayer == null || state == STOP) {
     	// 创建MediaPlayer对象并设置Listener
     		
     		
-    		Intent intent = getIntent();
-            Bundle bd = intent.getBundleExtra("bd");// 根据bundle的key得到对应的对象
-            url=bd.getString("url");
-            contentUrl = bd.getString("contentUrl");	
+    		//Intent intent = getIntent();
+           // Bundle bd = intent.getBundleExtra("bd");// 根据bundle的key得到对应的对象
+            //url=bd.getString("url");
+            //contentUrl = bd.getString("contentUrl");	
     		
 	    	//mMediaPlayer = MediaPlayer.create(this, R.raw.test); 
-	    	Uri listenFile = null;
-	    	listenFile = Uri.parse(Chuli.yuming + contentUrl);	    	
-	    	mMediaPlayer = MediaPlayer.create(this, listenFile);//.create(this, R.raw.test);
+	    	//Uri listenFile = null;
+	    	//listenFile = Uri.parse(Chuli.yuming + contentUrl);	    	
+	    	//mMediaPlayer = MediaPlayer.create(this, listenFile);//.create(this, R.raw.test);
+	    	//MediaPlayer mMediaPlayer = new MediaPlayer();
+	    	try{
+	    		//mMediaPlayer.setDataSource(Chuli.yuming + contentUrl);//.setDataSource(this, listenFile);
+	    		mMediaPlayer.setDataSource(listenContent);
+	    		mMediaPlayer.prepare();
+	    	}catch(Exception ee){
+	    		Log.v("打开媒体文件错误", ee.toString());
+	    	}
 	    	mMediaPlayer.setOnPreparedListener(preListener);
 	    	 Log.v("总进度","k"+mMediaPlayer.getDuration());
 	    	seekbar.setMax(mMediaPlayer.getDuration());//设置进度条   

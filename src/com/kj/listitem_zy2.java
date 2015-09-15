@@ -27,6 +27,7 @@ public class listitem_zy2 extends LinearLayout { //作业列表类
     RelativeLayout r1,r2;
     public static  String url="";
 	public static  String contentUrl="";
+	public static String workType="";
    
     LinearLayout l1; 
     
@@ -71,6 +72,7 @@ public class listitem_zy2 extends LinearLayout { //作业列表类
 					 Bundle bundle=new Bundle();
 					    bundle.putString("url", url);
 					    bundle.putString("contentUrl", contentUrl);
+					    bundle.putString("workType", workType);
 					    it.putExtra("bd", bundle);
 					    //it.putExtras(bundle);       // it.putExtra(“test”, "shuju”);
 					

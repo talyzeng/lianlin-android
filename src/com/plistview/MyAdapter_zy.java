@@ -217,6 +217,7 @@ public class MyAdapter_zy extends BaseAdapter {
 			listitem_zy2.url = url;
 	  	       lt_tj.get(tj_count-1);
 			listitem_zy2.contentUrl = contentUrl;
+			listitem_zy2.workType = type;
 	  		   
 	  		   lt_tj.get(tj_count-1).setTextTitle1(title1);
 	  		   lt_tj.get(tj_count-1).setTextTitle2(title2);
