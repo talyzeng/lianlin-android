@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent" >
+
+  <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/nav"
+    
+  >
+  
+      <ImageView 
+            android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_back"
+    android:id="@+id/nzsz_btn_return"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="5dp"
+          android:contentDescription="TODO"/>
+  <TextView 
+       android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="闹钟设置"
+                    android:textSize="18dp"
+    android:textColor="#FFFFFF"
+      />
+  
+   <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/sx_list_f_xl"
+            
+            >
+        </FrameLayout>
+  </RelativeLayout>
+
+  <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+      >
+  <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+      >
+     <View 
+          android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"
+         />
+     
+     
+     
+     <View 
+          android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"
+         />
+     <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:text="闹钟1"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c1"
+             />
+     
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/nzsz_l1"
+                 >
+         
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期一"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c11"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期二"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c12"
+             />
+         
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期三"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c13"
+             />
+        </LinearLayout>
+         
+          <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期四"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c14"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期五"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c15"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期六"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c16"
+             />
+         </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期日"
+        android:id="@+id/nzsz_c17"
+             />
+         </LinearLayout>
+         
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+                 >
+         <TextView 
+             
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="时间："
+        android:textColor="#000000"
+             />
+         <TextView 
+             
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#666666"
+        android:background="@drawable/btn_kk2"
+        android:hint="请选择"
+        android:id="@+id/nzsz_text_time1"
+             />
+         </LinearLayout>
+      
+      </LinearLayout>
+      
+    
+      
+      
+      <View 
+          android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"
+         />
+      
+      
+      
+      
+        <View 
+          android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"
+         />
+     <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:text="闹钟2"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c2"
+             />
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/nzsz_l2"
+                 >
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期一"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c21"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期二"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c22"
+             />
+         
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期三"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c23"
+             />
+        </LinearLayout>
+         
+          <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期四"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c24"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期五"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c25"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期六"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c26"
+             />
+         </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期日"
+        android:id="@+id/nzsz_c27"
+             />
+         </LinearLayout>
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+                 >
+         <TextView 
+             
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="时间："
+        android:textColor="#000000"
+             />
+         <TextView 
+             
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#666666"
+        android:background="@drawable/btn_kk2"
+        android:hint="请选择"
+        android:id="@+id/nzsz_text_time2"
+             />
+         </LinearLayout>
+      </LinearLayout>
+      
+      
+    
+      
+      
+      <View 
+          android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"
+         />
+      
+      
+        <View 
+          android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"
+         />
+     <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:text="闹钟3"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c3"
+             />
+     
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/nzsz_l3"
+                 >
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期一"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c31"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期二"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c32"
+             />
+         
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期三"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c33"
+             />
+        </LinearLayout>
+         
+          <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期四"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c34"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期五"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c35"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期六"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c36"
+             />
+         </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期日"
+        android:id="@+id/nzsz_c37"
+             />
+         </LinearLayout>
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+                 >
+         <TextView 
+             
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="时间："
+        android:textColor="#000000"
+             />
+         <TextView 
+             
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#666666"
+        android:background="@drawable/btn_kk2"
+        android:hint="请选择"
+        android:id="@+id/nzsz_text_time3"
+             />
+         </LinearLayout>
+      </LinearLayout>
+      
+      
+    
+      
+      
+      <View 
+          android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"
+         />
+      
+      
+      
+      
+      
+        <View 
+          android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"
+         />
+     <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:text="闹钟4"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c4"
+             />
+     
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/nzsz_l4"
+                 >
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期一"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c41"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期二"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c42"
+             />
+         
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期三"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c43"
+             />
+        </LinearLayout>
+         
+          <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期四"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c44"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期五"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c45"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期六"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c46"
+             />
+         </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期日"
+        android:id="@+id/nzsz_c47"
+             />
+         </LinearLayout>
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+                 >
+         <TextView 
+             
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="时间："
+        android:textColor="#000000"
+             />
+         <TextView 
+             
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#666666"
+        android:background="@drawable/btn_kk2"
+        android:hint="请选择"
+        android:id="@+id/nzsz_text_time4"
+             />
+         </LinearLayout>
+      
+      </LinearLayout>
+      
+    
+      
+      
+      <View 
+          android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"
+         />
+      
+      
+      
+      
+      
+        <View 
+          android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"
+         />
+     <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:text="闹钟5"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c5"
+             />
+     
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/nzsz_l5"
+                 >
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期一"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c51"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期二"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c52"
+             />
+         
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期三"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c53"
+             />
+        </LinearLayout>
+         
+          <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期四"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c54"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期五"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c55"
+             />
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期六"
+        android:layout_weight="1"
+        android:id="@+id/nzsz_c56"
+             />
+         </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                 >
+         <CheckBox 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#666666"
+        android:text="星期日"
+        android:id="@+id/nzsz_c57"
+             />
+         </LinearLayout>
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+                 >
+         <TextView 
+             
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="时间："
+        android:textColor="#000000"
+             />
+         <TextView 
+             
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#666666"
+        android:background="@drawable/btn_kk2"
+        android:hint="请选择"
+        android:id="@+id/nzsz_text_time5"
+             />
+         </LinearLayout>
+      
+      </LinearLayout>
+      
+    
+      
+      
+      <View 
+          android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"
+         />
+     <Button 
+          android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/nzsz_btn_save"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/nav"
+        android:layout_gravity="center_vertical"
+        android:text="保存"
+        android:layout_marginBottom="10dp"
+         />
+     </LinearLayout></ScrollView>
+</LinearLayout>

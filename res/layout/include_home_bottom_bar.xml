@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/home_foot_tab_height"
+    android:gravity="center"
+    android:background="@drawable/footer_bg"
+    android:orientation="horizontal" >
+
+    
+      <RelativeLayout 
+                  android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+          android:layout_weight="1"
+              >
+              <FrameLayout 
+                     android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+                  >
+                    <RelativeLayout 
+                  android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+              >
+          <RadioButton
+        android:id="@+id/rdoBtn_tab_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/tab_home_selector"
+        android:text="作业"
+        android:checked="true"
+        android:layout_centerInParent="true"
+        style="@style/home_foot_tab_style" />
+          
+          </RelativeLayout>
+          
+                    <RelativeLayout 
+                  android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+              >   
+          <TextView 
+               android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="10"
+        android:id="@+id/bottom_text_xxnum"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@drawable/tab_unread_bg"
+              />
+            </RelativeLayout>
+          </FrameLayout>
+        </RelativeLayout>
+   
+  
+  <RelativeLayout 
+                  android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+              >
+    <RadioButton
+        android:id="@+id/rdoBtn_tab_attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="消息"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/tab_home_attendance_selector"
+        style="@style/home_foot_tab_style" />
+</RelativeLayout>
+
+  <FrameLayout 
+           android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        >
+        <RelativeLayout 
+                  android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+              >
+        <RadioButton
+        android:id="@+id/rdoBtn_tab_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="班级"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/tab_home_me_selector"
+        style="@style/home_foot_tab_style" />
+        </RelativeLayout>
+       
+      <!--    -->
+        
+    </FrameLayout>
+   
+
+     <RelativeLayout 
+                  android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+              >
+    <RadioButton
+        android:id="@+id/rdoBtn_tab_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/tab_home_accout_selector"
+        style="@style/home_foot_tab_style" />
+    </RelativeLayout>
+
+</LinearLayout>

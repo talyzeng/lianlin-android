@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_home_foot_tab_textcolor_press">#2dbce4</color>
+    <color name="color_home_foot_tab_textcolor_normal">#a3a3a3</color>
+    <color name="color_home_bg">#ececec</color>
+    <color name="color_base_top_title_bar_bg">#0b73c8</color>
+    <color name="color_register_item_line">#e7e7e7</color>
+    <color name="register_text_color">#a3a1a1</color>
+    <color name="home_qrcode_finder_color">#a3a1a1</color>
+    <color name="color_login_btn_color">#424242</color>
+    <color name="color_setting_item_line">#e7e7e7</color>
+    
+    <color name="white">#fff</color>
+    
+     <color name="transparent">#0000</color>
+    <color name="btn_long_text">#ffff</color>
+    
+      <!-- 画面背景色 -->
+    <drawable name="layout_backgroud">#000000</drawable>
+    
+    <!-- 分割线背景色 -->
+    <drawable name="line_background">#161823</drawable>
+
+   
+    
+    <!-- 控件按下时显示的颜色 -->
+    <color name="list_backgroud_color">#2fb3cb</color>
+    <color name="title_color">#0f8ec5</color>
+    <color name="content_color">#737373</color>
+    
+    
+    
+    
+    
+       <color name="background_color">#ffd1dce9</color>
+    <color name="text_color">#ff666666</color>
+        
+    <color name="popup_main_background">#b0000000</color>
+   
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+  
+    <color name="no_color">#00000000</color>
+      <color name="text_color_big_title">#383838</color>
+    <color name="text_color_item_info">#777777</color>
+
+    <!-- 内容颜色 -->
+    <color name="content_dark">#383838</color>
+    <color name="content_light">#777777</color>
+    <color name="content_light_light">#a4a4a4</color>
+
+    <!--  -->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+   
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="register_back_color">#ececec</color>
+    <color name="title">#FFFFFF</color>
+    <color name="red">#ff0000</color>
+    <color name="bg_light">#F1EEE9</color>
+    <color name="bg_dark">#CBC7C4</color>
+
+    <!-- 头像背景色 -->
+    <color name="bg_pic_user">#ff0000</color>
+    <color name="bg_pic_coach">#EC00F5</color>
+    <color name="bg_pic_star">#F69900</color>
+    <color name="bg_pic_prop">#00D579</color>
+    
+    <color name="button_sns_text_color">#525252</color>
+    
+        
+        
+        
+        
+        
+        
+        
+         <color name="sliding_menu_item_down">#ff39393b</color>
+    <color name="sliding_menu_item_release">#00000000</color>
+    <color name="sliding_menu_background">#ff2c2c2e</color>
+    <color name="sliding_menu_body_background">#fff5f5f5</color>
+    
+         <color name="black">#ff000000</color>
+    <color name="blue">#ff75a6ff</color>
+    <color name="translucence">#ff4e4752</color>
+    
+       <color name="black_overlay">#66000000</color>
+    <color name="none_color">#00000000</color>
+    <color name="blue_overlay">#660D92DD</color>
+</resources>

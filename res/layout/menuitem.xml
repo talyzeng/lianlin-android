@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+     >
+
+    <RelativeLayout 
+           android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+          android:id="@+id/menuitem_button1"
+    android:background="@drawable/xl_bg"
+        >
+        <LinearLayout 
+          
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+            >
+           
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:textSize="12dp"
+          android:layout_gravity="center_vertical"
+          android:id="@+id/menuitem_text_sy"
+        android:text="所有" />
+   </LinearLayout>
+   </RelativeLayout>
+        
+   <ImageView 
+         android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+       />
+
+   <RelativeLayout 
+           android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+            android:id="@+id/menuitem_button2"
+    android:background="@drawable/xl_bg"
+        >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_centerInParent="true"
+            >
+            
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+         android:textSize="12dp"
+         android:id="@+id/menuitem_text_wbtsx"
+          android:layout_gravity="center_vertical"
+        android:text="文本提示型" />
+   </LinearLayout>
+   </RelativeLayout>
+        
+   <ImageView 
+         android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+       />
+        
+   <RelativeLayout 
+           android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+            android:id="@+id/menuitem_button3"
+    android:background="@drawable/xl_bg"
+        >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_centerInParent="true"
+            >
+            
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+         android:textSize="12dp"
+         android:id="@+id/menuitem_text_rwtsx"
+          android:layout_gravity="center_vertical"
+        android:text="任务提示型" />
+   </LinearLayout>
+   </RelativeLayout>
+        
+   <ImageView 
+         android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+       />
+   <RelativeLayout 
+           android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+            android:id="@+id/menuitem_button4"
+    android:background="@drawable/xl_bg"
+        >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_centerInParent="true"
+            >
+            
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+         android:textSize="12dp"
+         android:id="@+id/menuitem_text_zltsx"
+          android:layout_gravity="center_vertical"
+        android:text="资料提示型" />
+   </LinearLayout>
+   </RelativeLayout>
+        
+   <ImageView 
+         android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+       />
+</LinearLayout>

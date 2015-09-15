@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+       android:background="#FFFFFF"
+       android:id="@+id/list_wdxx_l1"
+     >
+     
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     >
+    <ImageView 
+           android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:background="@drawable/icon_one"
+       android:layout_gravity="center_vertical"
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="5dp"
+       android:id="@+id/list_wdxx_img"
+        />
+    
+    
+    <LinearLayout 
+         android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+       android:layout_gravity="center_vertical"
+        >
+  
+     
+      <TextView 
+           android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="张学友"
+       android:textColor="#333333"
+       android:layout_marginLeft="10dp"
+       android:textSize="16dp"
+       android:id="@+id/list_wdxx_text_name"
+       android:layout_gravity="center_vertical"
+          />
+       <TextView 
+           android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="你好烦"
+       android:textColor="#000000"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="3dp"
+       android:textSize="12dp"
+       android:id="@+id/list_wdxx_text_content"
+       android:layout_gravity="center_vertical"
+          />
+     </LinearLayout>
+        <TextView 
+           android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:id="@+id/list_wdxx_text_id"
+       android:visibility="invisible"
+          />
+        
+             <TextView 
+           android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:id="@+id/list_wdxx_text_cliendid"
+       android:visibility="invisible"
+          />
+   <TextView 
+           android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:id="@+id/list_wdxx_text_time"
+       android:visibility="invisible"
+          />
+     <TextView 
+           android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:id="@+id/list_wdxx_text_type"
+       android:visibility="invisible"
+          />
+   </LinearLayout>
+   <View 
+          android:layout_width="fill_parent"
+       android:layout_height="0.5dp"
+       android:background="@drawable/line"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       />
+    
+</LinearLayout>

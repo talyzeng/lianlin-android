@@ -1,0 +1,48 @@
+package com.cmcc.attendance.utils;
+
+import android.content.Context;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+/**
+ * 
+ * Title:       KeyBoardUtils.java
+ * Description:
+ * Copyright:   Copyright (c) 2011
+ * Company:     ** Teachnology
+ * CreateTime:  2014-11-18
+ * 
+ * @author      yuguocheng
+ * @version     Ver1.0
+ * @since       Ver1.0
+ */
+public class KeyBoardUtils {
+	/**
+	 * 打卡软键盘
+	 * 
+	 * @param mEditText
+	 *            输入框
+	 * @param mContext
+	 *            上下文
+	 */
+	public static void openKeybord(EditText mEditText, Context mContext) {
+		InputMethodManager imm = (InputMethodManager) mContext
+				.getSystemService(Context.INPUT_METHOD_SERVICE);
+		imm.showSoftInput(mEditText, InputMethodManager.RESULT_SHOWN);
+		imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,
+				InputMethodManager.HIDE_IMPLICIT_ONLY);
+	}
+
+	/**
+	 * 关闭软键盘
+	 * 
+	 * @param mEditText
+	 *            输入框
+	 * @param mContext
+	 *            上下文
+	 */
+	public static void closeKeybord(EditText mEditText, Context mContext) {
+		InputMethodManager imm = (InputMethodManager) mContext
+				.getSystemService(Context.INPUT_METHOD_SERVICE);
+		imm.hideSoftInputFromWindow(mEditText.getWindowToken(), 0);
+	}
+}

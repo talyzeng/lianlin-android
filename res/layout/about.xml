@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#1c1d21"
+    android:layout_height="match_parent" >
+
+  <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    
+  >
+  
+      <ImageView 
+            android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_back"
+    android:id="@+id/about_btn_return"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="5dp"
+          android:contentDescription="TODO"/>
+  <TextView 
+       android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="关于我们"
+                    android:textSize="18dp"
+    android:textColor="#FFFFFF"
+      />
+  
+   
+  </RelativeLayout>
+        
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:fillViewport="true"
+                 >
+         
+         <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V1.0"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    来了由来了科技有限公司于2013年创建，依托公司强大的服务规模优势和先进的互联网技术管理经验，致力于为中小微企业、个人构建本地最好的生活服务平台。满足和超越用户需求，为用户打造更好的体验，为美食行业带来新的视角和价值。"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+             />
+         <RelativeLayout 
+                android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+             >
+         <LinearLayout 
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+         >
+             
+             <TextView 
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="copyright@2013-2015"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+             /> 
+                 <TextView 
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="来了科技有限公司"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+             /> 
+             
+              </LinearLayout >
+              </RelativeLayout>
+     </LinearLayout >
+
+     
+</LinearLayout>

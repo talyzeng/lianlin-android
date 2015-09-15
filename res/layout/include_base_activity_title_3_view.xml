@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="47dip"
+    android:background="@drawable/nav">
+
+    <LinearLayout 
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        >
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:visibility="gone"
+        android:background="@drawable/xueyuan" />
+       </LinearLayout>
+    
+  <TextView
+        android:id="@+id/top_text_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="华南师范大学"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="17dp" />
+  
+  
+        <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        >
+    <ImageView     
+        android:id="@+id/top_text_chat"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/chat" />
+    
+      <ImageView
+        android:id="@+id/top_text_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/search" />
+    
+    
+</LinearLayout>
+</RelativeLayout>

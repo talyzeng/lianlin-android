@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+     >
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav"
+        android:id="@+id/user_r_top"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/wjmm_btn_return"
+              />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="忘记密码"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+           
+            />
+    </RelativeLayout>
+    
+        
+        <LinearLayout 
+              android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_below="@+id/user_r_top"
+    android:layout_above="@+id/user_l_bottom"
+            >
+            
+            
+                
+                <!-- ****************************第二行********************** -->
+            <LinearLayout 
+                 android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    
+                >
+                      <EditText
+                              android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="请输入手机号"
+    android:background="@drawable/login_input"
+    android:layout_gravity="center_vertical"
+    android:textSize="20dp"
+    android:textColor="#FF0033"
+    android:id="@+id/wjmm_ed_name"
+    android:numeric="integer"
+                          />
+            </LinearLayout>
+            
+                <LinearLayout 
+                       android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="horizontal"
+    
+                    >
+         <LinearLayout 
+                 android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:layout_gravity="center_vertical"
+                >
+                      <EditText
+                              android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="请输入手机验证码"
+    android:layout_gravity="center_vertical"
+    android:textSize="20dp"
+    android:textColor="#FF0033"
+    android:background="@drawable/login_input"
+    android:password="true"
+    android:id="@+id/wjmm_ed_yzm"
+    android:numeric="integer"
+                          />
+                   
+            </LinearLayout>     
+               <Button 
+                     android:layout_width="fill_parent"
+                     android:layout_height="34dp"
+                     android:id="@+id/wjmm_btn_fsyzm"
+                     android:text="发送验证码"
+                     android:textSize="16dp"
+                     android:textColor="#ffffff"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:background="@drawable/login_btn1"
+                     android:layout_gravity="center_vertical"
+                      android:layout_weight="3"
+                     />
+             </LinearLayout>
+             
+             
+             
+             
+                <LinearLayout 
+                 android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    
+                >
+                      <EditText
+                              android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="请输入密码"
+    android:layout_gravity="center_vertical"
+    android:textSize="20dp"
+    android:textColor="#FF0033"
+    android:background="@drawable/login_input"
+    android:password="true"
+    android:id="@+id/wjmm_ed_pwd1"
+                          />
+            </LinearLayout>
+            <TextView 
+                          android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textColor="#FF6600"
+                     android:layout_marginTop="5dp"
+                     android:layout_marginBottom="5dp"
+                     android:layout_marginLeft="15dp"
+                     android:text="密码为6到32个字符"
+                     android:layout_toLeftOf="@+id/login_btn_wjmm"
+                         />
+                    
+                    
+                    <LinearLayout 
+                 android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+   
+                >
+                      <EditText
+                              android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="请重复密码"
+    android:layout_gravity="center_vertical"
+    android:textSize="20dp"
+    android:textColor="#FF0033"
+    android:background="@drawable/login_input"
+     android:password="true"
+    android:id="@+id/wjmm_ed_pwd2"
+                          />
+            </LinearLayout>
+                    
+                        
+                            <RadioGroup  
+        android:id="@+id/fabu_radiogroup1"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_x="3px"  
+    >  
+     
+    </RadioGroup>  
+                 <Button 
+                     android:layout_width="fill_parent"
+                     android:layout_height="34dp"
+                     android:id="@+id/wjmm_btn_xg"
+                     android:text="修改"
+                     android:textSize="16dp"
+                     android:textColor="#ffffff"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:background="@drawable/login_btn1"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_marginTop="10dp"
+                     />       
+                        
+        </LinearLayout>
+        
+            
+            
+     
+</RelativeLayout>

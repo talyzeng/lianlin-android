@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_home_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="53dip"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/register_margin_left"
+                android:text="@string/string_phone_number"
+                android:textColor="@color/register_text_color"
+                android:textSize="@dimen/register_margin_phone_number_text_size" />
+
+            <EditText
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_reigster_edttxt_input_pnone_number"
+                android:paddingLeft="@dimen/register_margin_edittxt_padd_left"
+                android:singleLine="true"
+                android:textColor="@color/register_text_color"
+                android:textSize="@dimen/register_margin_phone_number_text_size" />
+
+            <Button
+                android:layout_width="@dimen/register_get_code_btn_width"
+                android:layout_height="@dimen/register_get_code_btn_height"
+                android:layout_marginLeft="@dimen/register_margin_get_code_margin_right"
+                android:layout_marginRight="@dimen/register_margin_get_code_margin_right"
+                android:background="@drawable/btn_register_get_code_selector"
+                android:text="@string/string_register_get_code"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/register_margin_get_code_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dip"
+            android:background="@color/color_register_item_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="53dip"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/register_margin_left"
+                android:text="@string/string_register_activation_code"
+                android:textColor="@color/register_text_color"
+                android:textSize="@dimen/register_margin_phone_number_text_size" />
+
+            <EditText
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/register_margin_common_margin_right"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_register_input_pnonenumber"
+                android:paddingLeft="@dimen/register_margin_edittxt_padd_left"
+                android:singleLine="true"
+                android:textColor="@color/register_text_color"
+                android:textSize="@dimen/register_margin_phone_number_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dip"
+            android:background="@color/color_register_item_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_item_height"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/register_margin_left"
+                android:text="@string/string_register_passwd"
+                android:textColor="@color/register_text_color"
+                android:textSize="@dimen/register_margin_phone_number_text_size" />
+
+            <EditText
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/register_margin_common_margin_right"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_register_input_passwad"
+                android:paddingLeft="@dimen/register_margin_edittxt_padd_left"
+                android:singleLine="true"
+                android:textColor="@color/register_text_color"
+                android:textSize="@dimen/register_margin_phone_number_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dip"
+            android:background="@color/color_register_item_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/register_item_height"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/register_margin_left"
+                android:text="@string/string_register_confirm_passwd"
+                android:textColor="@color/register_text_color"
+                android:textSize="@dimen/register_margin_phone_number_text_size" />
+
+            <EditText
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/register_margin_common_margin_right"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_register_input_again_passwad"
+                android:paddingLeft="@dimen/register_margin_edittxt_padd_left"
+                android:singleLine="true"
+                android:textColor="@color/register_text_color"
+                android:textSize="@dimen/register_margin_phone_number_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dip"
+            android:background="@color/color_register_item_line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/register_btn_width"
+        android:layout_height="@dimen/register_btn_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/register_btn_margin_top"
+        android:background="@drawable/btn_register_selector"
+        android:text="@string/string_register"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/login_btn_textsize" />
+
+</LinearLayout>

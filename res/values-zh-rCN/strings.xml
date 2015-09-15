@@ -1,0 +1,61 @@
+<resources>
+
+    <string name="app_name">来了</string>
+    <string name="imgv_description_empty"> </string>
+    <string name="edttxt_hint_empty"> </string>
+    <string name="hint_login_edttxt_input_username">请输入您的ID</string>
+    <string name="hint_login_edttxt_input_passwd">请输入您的ID</string>
+    <string name="string_remember_the_password">记住密码</string>
+    <string name="string_forget_the_password">忘记密码</string>
+    <string name="string_login">登录</string>
+    <string name="string_no_username">没有帐号？立即注册</string>
+    <string name="string_home">首页</string>
+    <string name="string_home_attendance">我要</string>
+    <string name="string_home_account">我有</string>
+    <string name="string_me">设置</string>
+    <string name="string_home_title">来了</string>
+    <string name="string_register_account">注册帐号</string>
+    <string name="hint_reigster_edttxt_input_pnone_number">11位手机号码</string>
+    <string name="string_phone_number">手机号:</string>
+    <string name="string_register_get_code">获取验证码</string>
+    <string name="string_register_activation_code">激活码:</string>
+    <string name="string_register_passwd">密   码 :</string>
+    <string name="string_register_confirm_passwd">确认密码: </string>
+    <string name="hint_register_input_pnonenumber">请输入手机获取激活码</string>
+    <string name="hint_register_input_passwad">6-16位的数字与字母组合</string>
+    <string name="hint_register_input_again_passwad">再次输入密码</string>
+    <string name="string_home_qrcode_finder">二维码扫描</string>
+    <string name="string_home_lbs_map">LBS地图</string>
+    <string name="string_home_work_attendance">上班签到</string>
+    <string name="string_home_position_attendance">位置签到</string>
+    <string name="string_down_work_attendance">下班签到</string>
+    <string name="string_home_attendance_title">考勤管理</string>
+    <string name="string_home_account_title">台帐管理</string>
+    <string name="string_home_attendance_name_leave_app">请假申请</string>
+    <string name="string_home_attendance_name_work_overtime">加班申请</string>
+    <string name="string_home_attendance_name_exception_sign">异常补卡</string>
+    <string name="string_home_attendance_name_history">考勤记录</string>
+    <string name="string_home_attendance_name_note">考勤日志</string>
+    <string name="string_register">注册并登录</string>
+    <string name="string_more_title">更多</string>
+    <string name="string_setting_title">设置</string>
+    <string name="string_setting_share">分享到：</string>
+    <string name="string_person_info_title">个人信息</string>
+    <string name="string_person_info_username">姓名：</string>
+    <string name="string_person_info_phone_number">手机号：</string>
+    <string name="string_person_info_email">邮箱：</string>
+    <string name="string_person_info_departent">部门：</string>
+    <string name="string_person_info_work_number">工号：</string>
+    <string name="string_sim_wirte">SIM卡录入</string>
+    <string name="string_sim_data">日期：</string>
+    <string name="string_sim_summary">摘要：</string>
+    <string name="string_sim_income_number">收入数量：</string>
+    <string name="string_sim_send_number">发出数量：</string>
+    <string name="string_sim_remainder_number">结存数量：</string>
+    <string name="string_sim_submit">提交</string>
+    <string name="string_sim_cancel">取消</string>
+    
+    
+    <string name="string_apply">请假申请</string>
+    <string name="string_record">请假记录</string>
+</resources>

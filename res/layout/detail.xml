@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="#FFFFFF"
+    android:orientation="vertical" >
+ <LinearLayout  
+
+    android:focusable="true"  
+    android:focusableInTouchMode="true"  
+    android:layout_width="0px"  
+    android:layout_height="0px"/>  
+   
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="47dip"
+    android:background="#01977e"
+    android:gravity="center_vertical"
+    android:id="@+id/detail_r_top"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/detail_btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="详情页面"
+        android:textSize="17dp" />
+
+    
+    <Button
+        android:id="@+id/detail_btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="提交"
+        android:textSize="16dp"
+        android:background="#00000000"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"/>
+</RelativeLayout>
+
+  <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_below="@+id/detail_r_top" >
+    
+      <LinearLayout 
+            android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical"
+          >
+          
+          
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text="第X页"
+        android:id="@+id/detail_text_toptitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp" />
+          
+     <SeekBar 
+          android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/detail_seekbar1"
+         />
+     
+     
+     <WebView android:id="@+id/Toweb"  
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_margin="10dp" /> 
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:textColor="#000000"
+        android:text="听音频，写出相对应的单词（4分）"
+        android:id="@+id/detail_text_toptitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp" />
+    
+      <LinearLayout 
+           android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_marginLeft="10dp"
+     android:background="#FFFFFF"
+    android:orientation="horizontal"
+          >
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp" />
+    
+            <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp" />
+          
+      </LinearLayout>
+    
+      
+         <LinearLayout 
+           android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_marginLeft="10dp"
+     android:background="#FFFFFF"
+    android:orientation="horizontal"
+          >
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text="2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp" />
+    
+            <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp" />
+          
+      </LinearLayout>
+      
+            <LinearLayout 
+           android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_marginLeft="10dp"
+     android:background="#FFFFFF"
+    android:orientation="horizontal"
+          >
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text="3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp" />
+    
+            <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp" />
+          
+      </LinearLayout>
+      
+               <LinearLayout 
+           android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_marginLeft="10dp"
+     android:background="#FFFFFF"
+    android:orientation="horizontal"
+          >
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text="4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp" />
+    
+            <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp" />
+          
+      </LinearLayout>
+      </LinearLayout>
+      
+      
+      
+      
+      
+</ScrollView>
+   
+  
+</RelativeLayout>

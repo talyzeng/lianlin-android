@@ -1,0 +1,133 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+  <style name="PopupAnimation" parent="android:Animation">
+	<item name="android:windowEnterAnimation">@anim/popup_search_show</item>
+	<item name="android:windowExitAnimation">@anim/popup_search_hide</item>
+  </style>
+  
+  <style name="anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+    
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    
+    <!-- 自定义loading dialog -->  
+    <style name="popupWindows" parent="android:style/Theme.Dialog">  
+        <item name="android:windowFrame">@null</item>  
+        <item name="android:windowNoTitle">true</item>   
+        <item name="android:windowBackground">@drawable/bg_yxcd3</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowContentOverlay">@null</item>  
+        <item name="android:windowEnterAnimation">@anim/popup_search_show</item>
+		<item name="android:windowExitAnimation">@anim/popup_search_hide</item>
+    </style>  
+    
+    
+      
+    <!-- 自定义loading dialog -->  
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">  
+        <item name="android:windowFrame">@null</item>  
+        <item name="android:windowNoTitle">true</item>   
+        <item name="android:windowBackground">@drawable/bg_yxcd3</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowContentOverlay">@null</item>  
+    </style>  
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+     <style name="like_toast_dialog_style">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/round_background</item>
+    </style>
+    <style name="pop_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+       
+        <item name="android:windowBackground">@null</item>
+       
+        
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+        
+    
+<style name="AnimationFade">  
+  
+    <!-- PopupWindow左右弹出的效果 -->  
+    <item name="android:windowEnterAnimation">@anim/popshow_anim</item>  
+    <item name="android:windowExitAnimation">@anim/pophidden_anim</item>  
+</style>     
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+	<style name="login_edttxt_style">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">@dimen/login_edttxt_textsize</item>
+	    <item name="android:textColor">#666666</item>
+	    <item name="android:singleLine">true</item>
+	</style>
+    <style name="home_foot_tab_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/home_foot_tab_textsize</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@drawable/tab_home_textcolor_selector</item>
+    </style>
+
+    
+    
+    <style name="home_btn_top_style">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/tab_home_textcolor_selector</item>
+        <item name="android:textSize">@dimen/home_btn_common_textsize</item>
+    </style>
+
+      <style name="home_btn_main" >
+        <item name="android:paddingTop">10dp</item>
+    </style>
+    
+    <style name="home_btn_bottom_style" parent="home_btn_top_style">
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">@dimen/home_bottom_btn_wdith</item>
+        <item name="android:layout_height">@dimen/home_bottom_btn_height</item>
+        <item name="android:paddingTop">@dimen/home_bootom_btn_drawpadd</item>
+    </style>
+    
+     <style name="home_btn_top3_style">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/tab_home_textcolor_selector2</item>
+        <item name="android:textSize">@dimen/home_btn_common_textsize</item>
+    </style>
+    <style name="home_btn_3_style" parent="home_btn_top3_style">
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">@dimen/home_bottom_btn_wdith</item>
+        <item name="android:layout_height">@dimen/home_bottom_btn_height</item>
+        <item name="android:paddingTop">@dimen/home_bootom_btn_drawpadd</item>
+    </style>
+    
+    
+    <style name="Animation_dropdown" mce_bogus="1" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+    
+</resources>

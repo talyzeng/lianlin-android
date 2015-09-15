@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="#ededed"
+     android:focusable ="true" android:focusableInTouchMode="true" 
+    android:orientation="vertical" >
+
+   
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="47dip"
+    android:background="#68bf81"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/chat_btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+       
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_action_back_selector" />
+
+    <TextView
+        android:id="@+id/chat_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:text="聊天标题"
+        android:textSize="17dp" />
+
+</RelativeLayout>
+   
+   <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+     
+  
+  
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="47dip"
+    android:background="#f8f8f8"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/chat_ed_send"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/chat_btn_send"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_kk2"
+        android:textSize="17dp" />
+
+    <Button 
+         android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="发送"
+        android:background="#68bf81"
+        android:id="@+id/chat_btn_send"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        />
+</RelativeLayout>
+                                               
+</LinearLayout>

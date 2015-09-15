@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_home_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+         >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/personal_item_margin_left"
+                android:text="@string/string_person_info_username"
+                android:textColor="@color/home_qrcode_finder_color"
+                android:textSize="@dimen/personal_username_textsize" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/edttxt_hint_empty"
+                android:singleLine="true"
+                android:textColor="@color/home_qrcode_finder_color"
+                android:textSize="@dimen/setting_username_textsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:background="@color/color_setting_item_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/personal_item_margin_left"
+                android:text="@string/string_person_info_phone_number"
+                android:textColor="@color/home_qrcode_finder_color"
+                android:textSize="@dimen/personal_username_textsize" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/edttxt_hint_empty"
+                android:singleLine="true"
+                android:textColor="@color/home_qrcode_finder_color"
+                android:textSize="@dimen/setting_username_textsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:background="@color/color_setting_item_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/personal_item_margin_left"
+                android:text="@string/string_person_info_email"
+                android:textColor="@color/home_qrcode_finder_color"
+                android:textSize="@dimen/personal_username_textsize" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/edttxt_hint_empty"
+                android:singleLine="true"
+                android:textColor="@color/home_qrcode_finder_color"
+                android:textSize="@dimen/setting_username_textsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:background="@color/color_setting_item_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/personal_item_margin_left"
+                android:text="@string/string_person_info_departent"
+                android:textColor="@color/home_qrcode_finder_color"
+                android:textSize="@dimen/personal_username_textsize" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/edttxt_hint_empty"
+                android:singleLine="true"
+                android:textColor="@color/home_qrcode_finder_color"
+                android:textSize="@dimen/setting_username_textsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:background="@color/color_setting_item_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/personal_item_height"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/personal_item_margin_left"
+                android:text="@string/string_person_info_work_number"
+                android:textColor="@color/home_qrcode_finder_color"
+                android:textSize="@dimen/personal_username_textsize" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/edttxt_hint_empty"
+                android:singleLine="true"
+                android:textColor="@color/home_qrcode_finder_color"
+                android:textSize="@dimen/setting_username_textsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:background="@color/color_setting_item_line" />
+    </LinearLayout>
+
+</LinearLayout>

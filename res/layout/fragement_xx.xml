@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_home_bg"
+    android:orientation="vertical" >
+  
+    <RelativeLayout 
+         android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#68bf81"
+        >
+          <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:layout_centerInParent="true"
+            />
+        
+    </RelativeLayout>
+    
+    <ScrollView     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+          <LinearLayout 
+               android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+              >
+              
+                <LinearLayout 
+             android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:id="@+id/xx_l_qun"
+            >
+            <ImageView 
+                   android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/icon_school"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+                />
+            <LinearLayout 
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            >
+            <TextView 
+                  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="班级"
+            android:textSize="16dp"
+            android:id="@+id/xx_text_class"
+            android:textColor="#000000"
+                />
+             <TextView 
+                  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/xx_text_school"
+            android:textSize="14dp"
+            android:textColor="#333333"
+                />
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+                >
+             	 <TextView 
+               	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#ffffff"
+		        android:text="10"
+		        android:id="@+id/message_text_time"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentTop="true"
+		        android:gravity="center"	
+		        android:visibility="invisible"
+              />
+                
+                
+                 <TextView 
+               	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#ffffff"
+		        android:text="10"
+		        android:id="@+id/message_text_xxnum"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentTop="true"
+		        android:gravity="center"
+		        android:background="@drawable/tab_unread_bg"
+		        android:visibility="invisible"
+              />
+                
+            </LinearLayout>
+        </LinearLayout>
+              <View 
+                     android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="#999999"
+                  />
+         
+      <LinearLayout 
+            android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/xx_list1"
+    android:layout_weight="1"
+    android:orientation="vertical"
+          ></LinearLayout>
+       </LinearLayout>
+  </ScrollView>
+        
+</LinearLayout>

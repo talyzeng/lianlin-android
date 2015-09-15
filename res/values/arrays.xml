@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_attendance_fragement_name">
+        <item>@string/string_home_attendance_name_leave_app</item>
+        <item>@string/string_home_attendance_name_work_overtime</item>
+        <item>@string/string_home_attendance_name_exception_sign</item>
+        <item>@string/string_home_attendance_name_history</item>
+        <item>@string/string_home_attendance_name_note</item>
+    </string-array>
+    <array name="home_attendance_fragement_icon">
+        <item>@drawable/home_attendance_name_leave_app</item>
+        <item>@drawable/home_attendance_name_work_overtime</item>
+        <item>@drawable/home_attendance_name_exception_sign</item>
+        <item>@drawable/home_attendance_name_history</item>
+        <item>@drawable/home_attendance_name_note</item>
+    </array>
+</resources>

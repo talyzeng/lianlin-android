@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	pixs =dips * (densityDpi/160).   
+	dips=(pixs*160)/densityDpi  
+-->
+<resources>
+    <dimen name="login_page_conten_width">253dip</dimen>
+    <dimen name="login_imgview_title_margin_top">105dip</dimen>
+    <dimen name="login_edttxt_username_margin_top">53dip</dimen>
+    <dimen name="login_edttxt_textsize">17sp</dimen>
+    <dimen name="login_btn_textsize">20sp</dimen>
+    <dimen name="login_bottom_no_id_padd">5dip</dimen>
+    <dimen name="login_edttxt_password_margin_top">7dip</dimen>
+    <dimen name="login_edttxt_input_icon_padding">7dip</dimen>
+    <dimen name="login_checkbox_margin_top">10dip</dimen>
+    <dimen name="login_loginbtn_margin_top">33dip</dimen>
+    <dimen name="login_txtview_no_username">27dip</dimen>
+    <dimen name="home_foot_tab_height">53dip</dimen>
+    <dimen name="home_foot_tab_textsize">15sp</dimen>
+    <dimen name="base_top_title_bar_height">47dip</dimen>
+    <dimen name="base_top_title_text_size">17sp</dimen>
+    <dimen name="base_top_title_margin">17dip</dimen>
+    <dimen name="register_item_height">53dip</dimen>
+    <dimen name="register_get_code_btn_width">93dip</dimen>
+    <dimen name="register_get_code_btn_height">40dip</dimen>
+    <dimen name="register_margin_left">7dip</dimen>
+    <dimen name="register_margin_get_code_margin_right">10dip</dimen>
+    <dimen name="register_margin_get_code_text_size">13sp</dimen>
+    <dimen name="register_margin_phone_number_text_size">15sp</dimen>
+    <dimen name="register_btn_width">251dip</dimen>
+    <dimen name="register_btn_height">55dip</dimen>
+    <dimen name="register_btn_margin_top">40dip</dimen>
+    <dimen name="register_margin_edittxt_padd_left">3dip</dimen>
+    <dimen name="register_margin_common_margin_right">103dip</dimen>
+    <dimen name="home_lbs_margin_left">60dip</dimen>
+    <dimen name="home_qrcode_and_lbs_drawpadd">33dip</dimen>
+    <dimen name="home_btn_common_textsize">15sp</dimen>
+    <dimen name="home_bootom_btn_drawpadd">37dip</dimen>
+    <dimen name="home_bottom_btn_wdith">101dip</dimen>
+    <dimen name="home_bottom_btn_height">151dip</dimen>
+    <dimen name="home_bottom_btn_margin_left">13dip</dimen>
+    <dimen name="home_attendance_item_width">158dip</dimen>
+    <dimen name="home_attendance_item_height">69dip</dimen>
+    <dimen name="setting_setbtn_margin_top">10dip</dimen>
+    <dimen name="setting_setbtn_margin_right">13dip</dimen>
+    <dimen name="setting_username_textsize">15sp</dimen>
+    <dimen name="setting_username_padd_top">19dip</dimen>
+    <dimen name="setting_username_margin_top">14dip</dimen>
+    <dimen name="setting_center_item_height">54dip</dimen>
+    <dimen name="setting_center_name_margin_left">20dip</dimen>
+    <dimen name="common_line_height">0.7dip</dimen>
+    <dimen name="setting_center_share_margin_left">33dip</dimen>
+    <dimen name="setting_center_share_wx_margin_left">93dip</dimen>
+    <dimen name="setting_center_more_margin_right">19dip</dimen>
+    <dimen name="personal_item_height">54dip</dimen>
+    <dimen name="personal_item_margin_left">20dip</dimen>
+    <dimen name="personal_username_textsize">15sp</dimen>
+    <dimen name="sim_summary_height">113dip</dimen>
+    <dimen name="sim_submit_btn_width">120dip</dimen>
+    <dimen name="sim_submit_btn_height">43dip</dimen>
+    <dimen name="sim_cancel_btn_margin_left">37dip</dimen>
+    <dimen name="sim_cancel_btn_margin_top">17dip</dimen>
+</resources>

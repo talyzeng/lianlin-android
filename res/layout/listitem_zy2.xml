@@ -1,0 +1,111 @@
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listitem_zy2_l" 
+        android:orientation="horizontal"
+        
+        > 
+        
+        <ImageView 
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:maxWidth="50dp" 
+            android:layout_width="50dp"
+                       
+        android:layout_height="fill_parent"
+        android:src="@drawable/type1"       
+        android:layout_gravity="center_vertical"
+        android:id="@+id/listitem_zy2_img"
+        android:layout_marginLeft="10dp"
+            />
+   
+        <LinearLayout 
+             android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+            >
+        <TextView 
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="标题标题"
+	        android:layout_gravity="center_vertical"
+	        android:id="@+id/listitem_zy2_text_title1"
+	        android:textColor="#000000"
+	        android:textSize="16dp"
+            />
+         <TextView 
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="标题标题"
+	        android:layout_gravity="center_vertical"
+	        android:id="@+id/listitem_zy2_text_title2"
+	        android:textColor="#999999"
+	        android:textSize="12dp"
+	        android:visibility="visible"
+            />
+        </LinearLayout>
+        
+        <RelativeLayout 
+              android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        
+            >
+         <FrameLayout 
+               android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+             >
+               <RelativeLayout 
+              android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listitem_zy2_r1"
+            >
+             <TextView 
+              android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="已完成"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFF"
+        android:id="@+id/listitem_zy2_text_state"
+        android:background="@drawable/wcqk"
+        android:textSize="12dp"
+            />
+            
+        </RelativeLayout>
+        
+                <RelativeLayout 
+              android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listitem_zy2_r2"
+        
+            >
+             <ImageView 
+              android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/tx_arrow"
+            />
+            
+        </RelativeLayout>
+        
+             </FrameLayout>
+        </RelativeLayout>
+           <TextView 
+              android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/listitem_zy2_text_id"
+        android:visibility="gone"
+            />
+             <TextView 
+              android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/listitem_zy2_text_type"
+        android:visibility="gone"
+            />
+        </LinearLayout>

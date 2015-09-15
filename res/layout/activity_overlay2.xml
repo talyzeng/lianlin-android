@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    >
+   <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/nav">
+
+    <TextView
+        android:id="@+id/map_btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_action_back_selector" />
+
+    <TextView
+        android:id="@+id/map_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="电子围栏"
+        android:layout_centerInParent="true"
+        android:textSize="18dp" />
+
+  
+
+</RelativeLayout>
+ <LinearLayout 
+              android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/tiaobg"
+        android:orientation="horizontal"
+           >
+     <LinearLayout 
+              android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+           >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="围栏名称"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="14dp" />
+     <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/dzwl_ed_wlname"
+        android:text=""
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ed_search"
+        android:layout_centerInParent="true"
+        android:textSize="16dp" />
+     </LinearLayout>
+     
+       <LinearLayout 
+              android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+           >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="提醒"
+        android:layout_gravity="center_vertical"
+        android:textSize="14dp" />
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="否"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bgxl"
+        android:id="@+id/dzwl_text_tx"
+        android:layout_centerInParent="true"
+        android:textSize="16dp" />
+     </LinearLayout>
+     
+ </LinearLayout>
+ 
+ <LinearLayout 
+              android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tiaobg"
+           >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="围栏半径(米)"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="14dp" />
+     <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/dzwl_ed_wlbj"
+        android:text=""
+        android:numeric="integer"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ed_search"
+        android:layout_centerInParent="true"
+        android:textSize="16dp" />
+     </LinearLayout>
+   <FrameLayout 
+            android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       >
+    
+      
+   <com.baidu.mapapi.map.MapView android:id="@+id/bmapView"
+	      android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+	    android:clickable="true"     
+	/>
+   
+   
+   <RelativeLayout 
+           android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       >
+       
+       <RelativeLayout 
+             android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:background="@drawable/seekbarbg"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+           >
+           <TextView 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5km"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        android:id="@+id/dzwl_text_allkm"
+               />
+       <com.kj.VerticalSeekBar 
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dzwl_text_allkm"
+        android:layout_above="@+id/dzwl_text_nowkm"
+        android:scrollbars="vertical"
+        android:id="@+id/dzwl_seekbar"
+        android:max="5000"
+        android:layout_centerHorizontal="true"
+           android:progressDrawable="@drawable/seekbar_progress"  
+            android:thumb="@drawable/thumb_drawable" 
+             android:minHeight="5dip" 
+                android:maxHeight="5dip"
+            android:thumbOffset="0dip"  
+            
+           />
+            <TextView 
+                  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0km"
+        android:id="@+id/dzwl_text_nowkm"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:textSize="12dp"
+               />
+       </RelativeLayout>
+       <LinearLayout 
+              android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+           >
+           <RelativeLayout 
+                  android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+               >
+              <Button 
+        android:id="@+id/dzwl_btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_lv"
+        android:text="确认新增围栏"
+        android:layout_centerInParent="true"
+        android:textSize="18dp" />
+              
+                  
+           </RelativeLayout>
+           
+           
+          
+           
+       </LinearLayout>
+   </RelativeLayout>
+   </FrameLayout>
+  
+</LinearLayout>

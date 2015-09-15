@@ -1,0 +1,851 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lianlin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <!--开机启动添加 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+          <!-- 在SDCard中创建与删除文件权限 -->  
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>   
+     <uses-permission android:name="android.permission.CAMERA" />  
+     <!-- 监听电话呼出 -->   
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>   
+    <!-- 监听电话状态改变 -->   
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />    
+    	<!-- 去掉READ_LOGS权限-->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--开机启动添加 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.gps.MyApplication"
+         android:logo="@drawable/logo">
+         
+        <!-- *************************leadcloud**************************** -->
+        <service android:name="com.avos.avoscloud.PushService"
+         android:exported="true" />
+
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+          <!-- *************************leadcloud**************************** -->
+        
+        
+        
+         <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="tEjBHsIbAznFBdXfpLWkteqp" />
+        <activity
+            android:name="com.cmcc.attendance.activity.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"  
+            
+            android:windowSoftInputMode="stateVisible|adjustResize"       
+           
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cmcc.attendance.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+         
+        </activity>
+        
+         <activity
+            android:name="com.cmcc.attendance.activity.dwjgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+        
+           <activity
+            android:name="com.cmcc.attendance.activity.chatqunActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+        
+             <activity
+            android:name="com.cmcc.attendance.activity.studentlistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+            <activity
+            android:name="com.cmcc.attendance.activity.xgmmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+        <activity
+            android:name="com.cmcc.attendance.activity.xgsjhActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+        <activity
+            android:name="com.cmcc.attendance.activity.xgxmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.chosesjrActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.yssjdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+       
+         <activity
+            android:name="com.cmcc.attendance.activity.gywmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+           <activity
+            android:name="com.cmcc.attendance.activity.wdscActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+        
+        <activity
+            android:name="com.cmcc.attendance.activity.ppjsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+        
+         <activity
+            android:name="com.cmcc.attendance.activity.chatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+        
+          <activity
+            android:name="com.cmcc.attendance.activity.gwcActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+             <activity
+            android:name="com.cmcc.attendance.activity.wdxxActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+        
+                <activity
+            android:name="com.cmcc.attendance.activity.dzwllistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >  
+        </activity>
+        
+        <activity
+            android:name="com.cmcc.attendance.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.wdshdzActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.add_addressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.cmcc.attendance.activity.MoreActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.sjtbActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+         <activity
+            android:name="com.cmcc.attendance.activity.jiantingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.cmcc.attendance.activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.cmcc.attendance.activity.PersonaInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+            <activity
+            android:name="com.cmcc.attendance.activity.xygllistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.mmtc2listActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+           <activity
+            android:name="com.cmcc.attendance.activity.jpzsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.cmcc.attendance.activity.wjmmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+             <activity
+            android:name="com.cmcc.attendance.activity.detailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+              <activity
+            android:name="com.cmcc.attendance.activity.detail2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                   <activity
+            android:name="com.cmcc.attendance.activity.ajszActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                
+        
+        
+          <activity
+            android:name="com.cmcc.attendance.activity.tsxy2listActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+           <activity
+            android:name="com.cmcc.attendance.activity.renzhengActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+            <activity
+            android:name="com.cmcc.attendance.activity.chosetype_fbActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+           
+               <activity
+            android:name="com.cmcc.attendance.activity.chosebigtype_fbActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+          <activity
+            android:name="com.cmcc.attendance.activity.gwcActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.cmcc.attendance.activity.LeaveApplicationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.LeaveRecordsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.cmcc.attendance.activity.SIMActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.bznrActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.txddActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.cmcc.attendance.activity.ybsxActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.cmcc.attendance.activity.chosetypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+           <activity
+            android:name="com.cmcc.attendance.activity.zzActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+           <activity
+            android:name="com.cmcc.attendance.activity.txActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.czActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.cmcc.attendance.activity.webActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.wdddActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.cmcc.attendance.activity.sjdetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.userActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.qjjlActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.cmcc.attendance.activity.jbjlActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+               <activity
+            android:name="com.cmcc.attendance.activity.chosebigtypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+             <activity
+            android:name="com.picschose.picschoseActivity" >
+        </activity>
+            <activity
+            android:name="com.cmcc.attendance.activity.ycdkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.grxxActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.szActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.xzlistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.cmcc.attendance.activity.chosesizeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+             <activity
+            android:name="com.cmcc.attendance.activity.mmtclistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                <activity
+            android:name="com.cmcc.attendance.activity.tsxylistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                    <activity
+            android:name="com.cmcc.attendance.activity.jhjjlistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+           <activity
+            android:name="com.cmcc.attendance.activity.lrlistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+             <activity
+            android:name="com.cmcc.attendance.activity.bmdszActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+           
+            <activity
+            android:name="com.cmcc.attendance.activity.hblistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+             <activity
+            android:name="com.cmcc.attendance.activity.wplistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+              <activity
+            android:name="com.cmcc.attendance.activity.zflistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                  <activity
+            android:name="com.cmcc.attendance.activity.studentlistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                      <activity
+            android:name="com.cmcc.attendance.activity.lwlistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                          <activity
+            android:name="com.cmcc.attendance.activity.wp2listActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                              <activity
+            android:name="com.cmcc.attendance.activity.zf2listActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>             
+        
+                              <activity
+            android:name="com.cmcc.attendance.activity.zjmdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                                                 <activity
+            android:name="com.cmcc.attendance.activity.choseschoolActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                                                     <activity
+            android:name="com.cmcc.attendance.activity.choseschool2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                                  <activity
+            android:name="com.cmcc.attendance.activity.jz2listActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                                                        <activity
+            android:name="com.cmcc.attendance.activity.cjbmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+                                      <activity
+            android:name="com.cmcc.attendance.activity.dsdwlistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                                  
+                          <activity
+            android:name="com.cmcc.attendance.activity.yssjdlistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+                       
+               <activity
+            android:name="com.cmcc.attendance.activity.jzlistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+             <activity
+            android:name="com.cmcc.attendance.activity.zylistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          
+          <activity
+            android:name="com.cmcc.attendance.activity.lxzzActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+             <activity
+            android:name="com.cmcc.attendance.activity.timelineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.timeline_gzjkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+           <activity
+            android:name="com.cmcc.attendance.activity.zyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.zhuce_sjActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.wdzlActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.dbsxActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.yjfkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>    
+        <activity
+            android:name="com.cmcc.attendance.activity.zshzlistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.wdyeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.cmcc.attendance.activity.dzxqbActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+             <activity
+            android:name="com.cmcc.attendance.activity.bigpicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.cmcc.attendance.activity.wdfbActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.cmcc.attendance.activity.wdxxActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.cmcc.attendance.activity.wdrzActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.cmcc.attendance.activity.zshzActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.cmcc.attendance.activity.jfczActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+            <activity
+            android:name="com.cmcc.attendance.activity.yjfkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+                    <activity
+            android:name="com.cmcc.attendance.activity.msglistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+           <activity
+            android:name="com.cmcc.attendance.activity.zhuce_userActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.gdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+           <activity
+            android:name="com.cmcc.attendance.activity.wytsjyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+           <activity
+            android:name="com.cmcc.attendance.activity.xgmmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.cmcc.attendance.activity.AttendanceApplyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+           <activity
+            android:name="com.example.MultiAlbum.MyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.cmcc.attendance.activity.AttendanceRecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.spdetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+            <activity
+            android:name="com.cmcc.attendance.activity.nzszActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+           <activity
+            android:name="com.cmcc.attendance.activity.xgsxmmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.fjsjActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.cmcc.attendance.activity.fqsxActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+             <activity
+            android:name="com.cmcc.attendance.activity.fqsx_nolxfsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.fqjyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.gzjkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.sxjkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.cmcc.attendance.activity.PopupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+         
+         
+         <activity
+            android:name="com.baidu.OverlayDemo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+          <activity
+            android:name="com.baidu.MapWL"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+              <activity
+            android:name="com.baidu.MapGJ"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        
+           <activity
+            android:name="com.baidu.AddMapWL"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+              <activity
+            android:name="com.zijunlin.Zxing.Demo.MainActivity"
+            android:screenOrientation="portrait" ></activity>
+        
+          <activity
+            android:name="com.zijunlin.Zxing.Demo.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            
+            android:screenOrientation="portrait" android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"   >
+        </activity>
+           <activity
+            android:name="com.alipay.sdk.pay.demo.PayDemoActivity">
+         
+        </activity>
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+          
+          <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        
+          
+  
+        <!-- push应用定义消息receiver声明 -->
+        <receiver android:name="com.baidu.push.example.MyPushMessageReceiver">
+            <intent-filter>
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- push必须的receviver和service声明 -->
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+		<!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+		<action android:name="android.intent.action.MEDIA_MOUNTED" />
+		<action android:name="android.intent.action.USER_PRESENT" />
+		<action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+		<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package" />
+            </intent-filter>                   
+        </receiver>
+        <service
+            android:name="com.baidu.android.pushservice"
+            android:exported="true"
+            android:process=":bdservice_v1"  >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- push结束 -->
+        
+		<!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data android:name="api_key" android:value="IHTdLRiDij6eMcwnlqqgSNPm" />
+    </application>
+
+</manifest>
